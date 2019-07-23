@@ -23,7 +23,7 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Image source={require("../assets/image.jpeg")} />
+				<Image source={require("../assets/plant1.jpg")} />
 				<Text>Welcome to Bzzra </Text>
 				<Text>For a better planting experience </Text>
 				<TouchableOpacity style={styles.button} onPress={this.gosign}>

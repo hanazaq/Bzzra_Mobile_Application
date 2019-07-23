@@ -18,9 +18,12 @@ export default class Login extends React.Component {
 		password: "",
 		gmails: []
 	};
-
 	goback = () => {
 		this.props.navigation.navigate("Home");
+	};
+
+	toAPP = () => {
+		this.props.navigation.navigate("Store");
 	};
 
 	readPosts = () => {
@@ -44,6 +47,7 @@ export default class Login extends React.Component {
 			.signInWithEmailAndPassword(this.state.email, this.state.password)
 			.then(() => {
 				alert("successfully logged in	");
+				this.toAPP();
 				this.props.navigation.navigate("Profile");
 			})
 			.catch(error => {
