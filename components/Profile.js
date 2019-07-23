@@ -7,8 +7,7 @@ import {
 	TouchableOpacity,
 	Modal,
 	TextInput,
-	FlatList,
-	
+	FlatList
 } from "react-native";
 
 import * as firebase from "firebase";
@@ -42,8 +41,12 @@ export default class Profile extends React.Component {
 				this.setState({ captions: captions });
 			});
 	};
-
 	componentWillMount() {
+		firebase.auth().onAuthStateChanged(user => {
+			if (!user) {
+				this.props.navigation.navigate("Login");
+			}
+		});
 		this.readPosts();
 	}
 
