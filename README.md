@@ -1,3 +1,3 @@
 # bzzra
 React Native mobile application   
-[![SC2 Video](doc/SC2_youtube.gif)](https://www.youtube.com/watch?v=--b-9HrKK6w)
+[![Demo](doc/SC2_youtube.gif)](https://drive.google.com/uc?export=download&id=1TX-yKHaDomeLObZcOTViyGsqFdZaM2rw)
